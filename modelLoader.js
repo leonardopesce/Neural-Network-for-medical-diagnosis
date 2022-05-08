@@ -1,7 +1,7 @@
 
 document.querySelector("#button").onclick = async function calculateValue() {
     console.log("loading model")
-    const model = await tf.loadLayersModel('src/model/model.json');
+    const model = await tf.loadLayersModel("/model/model.json");
     let value1 = parseFloat(document.getElementById("margini").value);
     let value2 = parseFloat(document.getElementById("HPV").value);
     let value3 = parseFloat(document.getElementById("NL").value);
